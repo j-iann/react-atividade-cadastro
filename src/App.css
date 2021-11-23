@@ -1,5 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: Roboto, 'sans-serif;'
+}
+
 .App {
   text-align: center;
+  flex-direction: row;
+  display: flex;
 }
 
 .App-logo {
@@ -13,20 +22,52 @@
   }
 }
 
+.cadastro {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(204, 235, 235);
+}
+
+form {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+form input {
+  border: none;
+  width: 450px;
+  height: 45px;
+  margin: 2px;
+  border-radius: 2%;
+}
+
+form button {
+  width: 450px;
+  height: 45px;
+  border: none;
+  background-color: lightgrey;
+  color: rgb(129, 129, 129);
+  font-weight: bold;
+  margin-top: 15px;
+}
+
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  width: 50%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  float: right;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
 @keyframes App-logo-spin {
   from {
